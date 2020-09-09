@@ -1,0 +1,1835 @@
+/*
+=== FARBEN ===
+dunkel rot:     rgba(173, 14, 72)
+hell rot:       rgba(184, 63, 75)
+grau:           rgba(250, 250, 251)
+------------------------------------
+grau 2:         rgba(252, 250, 251)
+logo rot:       rgba(178, 47, 65)
+wasser grau:    rgba(264, 234, 233)
+schrift logo:   rgba(84, 70, 67)
+
+*/
+
+:root {
+    --primary-color: rgb(173, 48, 70);
+    --primary-overlay: rgba(24, 39, 51, .85);
+}
+
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    max-width: 100%;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #494949;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    font-size: 40px;
+    padding-top: 8%;
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-family: 'Roboto Slab', serif;
+    color: #494949;
+}
+
+hr {
+    width: 50px;
+    height: 3px;
+    background: #494949;
+    border: 0px;
+    margin: 0 auto 40px auto;
+}
+
+#logo,
+li,
+img,
+.button,
+.row {
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.toggler {
+    display: none;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+/* Zwischenabastand */
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+    /* position: relative; */
+    opacity: 0.75;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/*  HEADER  ******************** */
+
+
+header {
+    width: 100%;
+    height: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(173, 48, 70, .9);
+    color: seashell;
+    -webkit-box-shadow: 0 10px 5px 0px rgba(75, 71, 71, 0.75);
+    box-shadow: 0 5px 5px 0px rgba(99, 95, 95, 0.75);
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    /* ID LOGO   */
+
+}
+
+#logo {
+    width: 400px;
+    margin: 30px 0 0 70px;
+    margin-left: 0;
+}
+
+#logo img {
+    width: 100%;
+}
+
+
+
+/* ID MAIN-NAV  ****************************** */
+
+header #main-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+header #main-nav ul {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+header #main-nav ul li {
+    float: left;
+
+}
+
+header #main-nav ul li {
+    font-size: 16px;
+    color: #fff;
+}
+
+header #main-nav ul li:hover {
+    padding-top: 5px;
+    cursor: pointer;
+    text-shadow: 5px 5px 10px #e2d0d0;
+}
+
+.transition {
+    -webkit-transition: all 250ms;
+    transition: all 255ms;
+}
+
+.zu {
+    top: -150px !important;
+}
+
+
+
+/* STARTSEITE */
+
+#header-container {
+    background-image: url('../img/bruecke2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+#header-container h1 {
+    margin: 240px auto 0 auto;
+    font-size: 5rem;
+    color: white;
+}
+
+#header-container .box-home {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.box-home h3 img {
+    margin-top: 20%;
+}
+
+#header-container h2 {
+    margin: 0 auto 0 auto;
+    font-size: 29px;
+    color: rgb(173, 48, 70);
+}
+
+/* ABOUT************************* */
+
+.section-about-wrapper{
+    width:100%;
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+#about1 {
+    display: flex;
+    position: relative;
+}
+
+
+#about h3 {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    padding-top: 72px;
+    color: grey;
+    font-size: 2em;
+}
+
+.konterfei-leitgedanke {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+
+.konterfei {
+    border: 1px solid black;
+    flex: 1 0 auto;
+}
+
+
+.konterfei img {
+
+    width: 100%;
+    height: 100%;
+}
+
+.leitgedanke {
+    border: 1px solid black;
+    color: rgb(87, 87, 87);
+    flex: 1 1 auto;
+}
+
+.leitgedanke h2 {
+    margin-top: 0;
+    text-align: center;
+    color: rgb(87, 87, 87);
+    font-weight: bold;
+}
+
+.dotter-simona {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+
+.dotter-simona h1 {
+    margin-top: 40px;
+    color: rgb(163, 49, 68);
+}
+
+.blocksatz {
+    text-align: start;
+}
+
+#about>hr {
+    margin-bottom: 100px;
+    background: white;
+}
+
+#vision-neu {
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+#vision {
+    background-image: url('../img/flieger1.jpg');
+    background-position: 42% 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.about-container {
+    margin-right: auto;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+
+.about-box {
+    border: 1px solid black;
+    margin: 2em;
+    -webkit-box-shadow: 5px 5px 5px rgb(116, 109, 109);
+    box-shadow: 5px 5px 5px rgb(116, 109, 109);
+    background-color: rgba(250, 250, 250, .8);
+    padding: 1.5em;
+    line-height: 2em;
+    text-align: left;
+    font-size: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+#about span {
+    font-weight: bold;
+}
+
+#about>.about-container>.about-dotter>img {
+    width: 30%;
+    height: 30%;
+}
+
+.arrow-up img {
+    width: 20px;
+    margin-top: 0;
+}
+
+.pimg1 {
+    background-image: url('../img/parallax-airline.jpg');
+    min-height: 400px;
+}
+
+#vision-neu {
+    padding: 0;
+}
+
+#container-vision {
+    margin-left: auto;
+    margin-right: auto;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 25%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#container-vision>li {
+    list-style-type: circle;
+    line-height: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.europa {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    margin-top: 50px;
+}
+
+.europa img {
+    width: 100%;
+}
+
+.abstand {
+    height: 50px;
+}
+
+
+/* IMMOBILIENENTWICKLUNG vorher VISION */
+
+
+
+#vision {
+    position: relative;
+    height: 100vh;
+    background-color: rgb(226, 226, 226);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#vision hr {
+    background: rgb(244, 227, 227);
+
+}
+
+#vision h3 {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 1em;
+    text-shadow: 1px 1px 1px whitesmoke;
+
+}
+
+.vision-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    font-size: 1.1em;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.vision-1 h1 {
+    color: rgb(173, 48, 70);
+    display: inline-block;
+}
+
+.vision-1 {
+    width: 60%;
+    text-align: start;
+    padding-left: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5em;
+    padding-left: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* Immobileinentwicklung Strategie */
+
+#heading-strategie {
+    color: rgb(173, 48, 70);
+    text-shadow: 1px 1px 1px rgb(216, 210, 210);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#vision p {
+    font-size: 1.3em;
+}
+
+.button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
+
+    width: 62%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-vision {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    width: 200px;
+    height: 40px;
+    margin-left: 0;
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(223, 144, 155)), to(rgb(173, 48, 70)));
+    background-image: -o-linear-gradient(rgb(223, 144, 155), rgb(173, 48, 70));
+    background-image: linear-gradient(rgb(223, 144, 155), rgb(173, 48, 70));
+
+}
+
+.button-vision-pl {
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    width: 200px;
+    height: 40px;
+    margin-left: 0;
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(223, 144, 155)), to(rgb(173, 48, 70)));
+    background-image: -o-linear-gradient(rgb(223, 144, 155), rgb(173, 48, 70));
+    background-image: linear-gradient(rgb(223, 144, 155), rgb(173, 48, 70));
+
+}
+
+.button-vision-pl>p {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    color: #fff;
+    color: white;
+    font-size: 16px;
+}
+
+.button-vision>p {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    color: #fff;
+    color: white;
+    font-size: 16px;
+}
+
+.button-vision:hover {
+    cursor: pointer;
+    background: #494949;
+}
+
+
+.pimg2 {
+    background-image: url('../img/parallax-skyscraper.jpg');
+    min-height: 400px;
+}
+
+
+
+/* WORK ************************************ */
+
+
+
+/* BAU-MANAGEMENT****************************** */
+
+#work {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.test-container {
+    position: relative;
+    margin-top: 10%;
+    width: 100%;
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.boxen {
+    height: 80vh;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+}
+
+.linke_box {
+    margin-right: 10px;
+    background-color: rgb(173, 48, 70);
+    display: flex;
+    color: white;
+    font-size: 1.3rem;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.links_1 {
+    margin-bottom: 10px;
+}
+
+.links_2 {
+    margin-bottom: 10px;
+}
+
+.mitte {
+    width: auto;
+    overflow: hidden;
+}
+
+
+.mitte img {
+    width: auto;
+    height: 100%;
+}
+
+
+.rechts {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+}
+
+.rechte_box {
+    margin-left: 10px;
+    background-color: rgb(173, 48, 70);
+    color: white;
+    font-size: 1.3rem;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.rechts_1 {
+    margin-bottom: 10px;
+}
+
+.rechts_2 {
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Idee Steuerung ****************************************/
+
+.ideen-steuerung-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.box {
+    width: 500px;
+    height: auto;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.box>img {
+    width: 100%;
+}
+
+.box-inter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.box-inter>h2 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.box-inter p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+/* Störung */
+
+.stoerung {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.stoerung img {
+    padding-bottom: 20px;
+}
+
+/* Projekterfolg */
+
+.projekterfolg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+/* Erfolg 1 */
+.erfolg-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.box-erfolg-1 {
+    width: 40%;
+}
+
+.box-erfolg-1>ul>li {
+    text-align: left;
+    list-style-type: disc;
+    line-height: 30px;
+}
+
+/* Erfolg 2 */
+
+.erfolg-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.box-erfolg-2 {
+    width: 40%;
+}
+
+.box-erfolg-2>ul>li {
+    text-align: left;
+    list-style-type: disc;
+    line-height: 30px;
+}
+
+/* Erfolg 3 */
+
+.erfolg-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.box-erfolg-3 {
+    width: 40%;
+}
+
+.box-erfolg-3>ul>li {
+    text-align: left;
+    list-style-type: disc;
+    line-height: 30px;
+}
+
+/* Erfolg 4 */
+
+.erfolg-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+}
+
+.box-erfolg-4 {
+    width: 40%;
+}
+
+.box-erfolg-4>ul {
+    margin: 0;
+}
+
+.box-erfolg-4>ul>li {
+    text-align: left;
+    list-style-type: disc;
+    line-height: 30px;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+
+/* lightbox...................... */
+#overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    right: 0px;
+    background-color: rgb(0, 0, 0, .5);
+
+}
+
+
+#overlay-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#overlay-image {
+    max-width: 50%;
+    max-height: 50%;
+    margin-top: 10%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+
+/* PROBLEMLÖSUNG******************************** */
+
+#geographie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    background-image: url('../img/tunnel1.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    color: rgb(173, 48, 70);
+}
+
+#shieflage i {
+    font-size: 3.4rem;
+}
+
+.geographie {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    background-color: rgba(200, 200, 200, .8);
+    border-radius: 10px;
+}
+
+.button-problemlösung-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-around;
+    -ms-flex-pack: space-around;
+    justify-content: space-around;
+
+    width: 62%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .6em;
+}
+
+
+.button-box p {
+    color: rgb(173, 48, 70);
+}
+
+.geographie h3 {
+    margin-top: 0;
+    font-size: 4rem;
+    color: rgb(173, 48, 70);
+    padding-top: 3%;
+
+}
+
+#schieflage {
+    font-size: 3em !important;
+}
+
+.interim {
+    padding-bottom: 4%;
+}
+
+#geographie h2 {
+    margin-top: 50px;
+    color: rgb(173, 48, 70);
+}
+
+#geographie p {
+    font-size: 2em;
+}
+
+.button-vision {
+    height: 50px;
+    margin-left: 10px;
+}
+
+.button-vision-pl {
+    height: 50px;
+    margin-left: 10px;
+}
+
+.stoerfaktoren {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+
+}
+
+.pimg4 {
+    background-image: url('../img/parallax-skyline.jpg');
+    min-height: 400px;
+}
+
+
+/* CONTACT***************************** */
+
+#contact {
+    height: 100vh;
+
+    background-image: url('../img/bahnhof.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+#contact hr {
+    background: rgb(212, 212, 202);
+}
+
+#contact h3 {
+    margin-top: 0;
+    text-shadow: 2px 2px 5px whitesmoke;
+}
+
+form input,
+textarea {
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    border: 2px solid #494949;
+}
+
+form input:first-child {
+    margin-top: 10px;
+}
+
+form input {
+    width: 552px;
+    height: 30px;
+}
+
+form textarea {
+    width: 550px;
+    height: 200px;
+    resize: none;
+}
+
+.input_text {
+    color: #494949;
+    padding-left: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: #999999;
+}
+
+::-moz-input-placeholder {
+    color: #999999;
+}
+
+:-ms-input-placeholder {
+    color: #999999;
+}
+
+:-moz-input-placeholder {
+    color: #999999;
+}
+
+.button {
+    background-color: #f0f0f0;
+    color: #494949;
+    width: 566px;
+    height: 50px;
+}
+
+.button:hover {
+    background-color: #494949;
+    color: #f0f0f0;
+}
+
+/* FOOTER***************************** */
+
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: #3f3f3f;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-box {
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: lighter;
+    color: white;
+    margin-bottom: 0;
+    font-size: 13px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 25%;
+    flex: 1 1 25%;
+}
+
+.sozial img {
+    width: 30px;
+}
+
+.impressum a {
+    color: white;
+    text-decoration: none;
+}
+
+.anschrift {
+    margin-top: 15px;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES****************************** */
+
+/* TABLETS */
+
+@media screen and (max-width: 1369px) {
+    .button-box {
+        flex-direction: column;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: auto;
+    }
+
+    #logo {
+        width: 100px;
+    }
+
+    header #main-nav {
+        margin-top: 0;
+        height: 50px;
+    }
+
+    header #main-nav ul li a {
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    #home .box-home {
+        width: 70%;
+    }
+
+    #home h1 {
+        font-size: 1rem;
+        margin-top: 200px;
+    }
+
+    /* home */
+
+    #home h2 {
+        font-size: 22px;
+    }
+
+    #about>hr {
+        margin-bottom: 100px;
+        background: white;
+    }
+
+    h3 {
+        padding-top: 12%;
+    }
+
+
+    .konterfei-leitgedanke {
+        width: 115%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    .dotter-simona {
+        width: 115%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .linke_box {
+        font-size: .9rem;
+    }
+
+    .rechte_box {
+        font-size: .9rem;
+    }
+
+
+    #projects {
+        width: auto;
+    }
+
+    #projects ul li {
+        width: 100%;
+        float: none;
+    }
+
+    #projects ul li:last-child {
+        padding-bottom: 20%;
+    }
+
+    #projects img {
+        width: 55%;
+        height: auto;
+    }
+
+    form input,
+    form textarea {
+        width: 60%;
+    }
+
+    .button {
+        width: 62%;
+    }
+
+    .stoerfaktoren {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    #geographie h3 {
+        font-size: 1.8rem;
+    }
+
+    #schieflage {
+        font-size: 1.5em !important;
+    }
+
+    .button-box p {
+        font-size: 1.3rem !important;
+    }
+
+    .container-problemlösung img {
+        width: 80%;
+    }
+
+    .test-container {
+        margin-top: 10%;
+    }
+
+    .mitte img {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .about-box {
+        width: 90%;
+    }
+
+
+    header {
+        height: auto;
+    }
+
+    #logo {
+        width: 300px;
+        margin-top: 15px;
+    }
+
+    .zu {
+        top: -120px !important;
+    }
+
+    header #main-nav {
+        margin-top: 0;
+    }
+
+    header #main-nav ul li a {
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    #container-vision {
+        width: 70%;
+    }
+
+    #work p {
+        font-size: 15px;
+    }
+
+
+
+    .eisberg img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .konterfei {
+        flex: auto;
+    }
+
+    #logo {
+        width: 300px;
+    }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 920px) {
+    #logo {
+        width: 150px;
+        margin-left: 30px;
+        margin-top: 15px;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    header #main-nav {
+        margin: 0;
+        float: none;
+        max-width: 100%;
+    }
+
+
+
+    /* Burger************************************** */
+
+    .toggler {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        opacity: 0;
+    }
+
+
+    .hamburger {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 25px;
+        margin-right: 35px;
+        z-index: 1;
+        width: 1px;
+        height: 1px;
+        padding: 1rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    /* Hamburber line */
+
+    .hamburger>div {
+        position: absolute;
+        float: right;
+        width: 80%;
+        height: 2px;
+        background-color: white;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+    }
+
+    /* Top and Bottom lines */
+    .hamburger>div::before,
+    .hamburger>div::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        width: 100%;
+        height: 2px;
+        background: inherit;
+    }
+
+    /* Moves line down */
+    .hamburger>div::after {
+        top: 10px;
+    }
+
+    /* Taoggler animate */
+    .toggler:checked+.hamburger>div {
+        -webkit-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+
+    /* turn lines into X */
+
+    .toggler:checked+.hamburger>div::before,
+    .toggler:checked+.hamburger>div::after {
+        top: 0;
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    /* rotate on hover wehn checked */
+
+    .toggler:checked:hover+.hamburger>div {
+        -webkit-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+        transform: rotate(225deg);
+    }
+
+
+
+    /* header nav*********************************  */
+
+    header #main-nav ul {
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    header #main-nav ul.open {
+        flex-direction: column;
+        margin-top: auto;
+        height: auto;
+        width: 100%;
+        background-color: rgba(173, 48, 70, 0.9);
+    }
+
+    header #main-nav ul li {
+        width: 100%;
+        padding: 25px 0;
+        margin: 0;
+        font-size: 1em;
+        border-top: 1px solid #dddddd;
+    }
+
+    #header-container .box-home {
+        width: 70%;
+    }
+
+    #header-container h1 {
+        font-size: 40px;
+        margin-top: 200px;
+    }
+
+    #header-container h2 {
+        font-size: 20px;
+    }
+
+    .box-home h3 img {
+        max-width: 90%;
+        margin-top: 55%;
+    }
+
+    #strich {
+        display: none;
+    }
+
+    header #main-nav ul li:hover {
+        background-color: #837c7c;
+    }
+
+    #about1 {
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-box {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .about-box h1 {
+        font-size: 22px;
+    }
+
+    .konterfei-leitgedanke {
+        flex-direction: column;
+    }
+
+
+    /* IMMOBILIENENTWICKLUNG *************************** */
+
+    .button-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button-problemlösung-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #vision {
+        background-image: url('../img/flieger1.jpg');
+        background-position: 44% 30%;
+    }
+
+    .button-vision {
+        margin-bottom: 15px;
+    }
+
+    .button-vision-pl {
+        margin-bottom: 15px;
+    }
+
+    #overlay-image {
+        max-width: 90%;
+        max-height: 50%;
+        margin-top: 30%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .vision-1 {
+        margin-bottom: 40px;
+        width: 85%;
+    }
+
+    #vision h3 {
+        font-size: 25px;
+    }
+
+    .vision-1 hr {
+        display: none;
+    }
+
+    .vision-1 h2 {
+        font-size: 20px;
+    }
+
+    .vision-1 p {
+        font-size: 15px;
+    }
+
+    .vision-1 ul li {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .erfolg-1 ul li {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .vision-2 {
+        width: 85%;
+    }
+
+    .erfolg-2 ul li {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .erfolg-3 ul li {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .erfolg-4 ul li {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .vision-2 h1 {
+        font-size: 20px;
+    }
+
+    .vision-2 img {
+        width: 100%;
+    }
+
+    #work h2 {
+        margin-bottom: 0;
+    }
+
+    .projekterfolg .img-proj {
+        width: 300px;
+        height: auto;
+    }
+
+    .ideen-steuerung-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .box {
+        margin: 20px;
+        width: 85%;
+    }
+
+    #work h3 {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+
+    #work h2 {
+        font-size: 18px;
+    }
+
+    :mit
+    /* Baumanagement ***********************************/
+
+    .test-container {
+        margin-top: 20%;
+    }
+
+    .linke_box {
+        font-size: .6rem;
+    }
+
+    .rechte_box {
+        font-size: .6rem;
+    }
+
+    .mitte img {
+        height: 100%;
+    }
+
+    /* Problemlösung ******************************************************* */
+
+    .button-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-vision {
+        align-items: center;
+        height: 40px;
+    }
+
+    .button-vision p {
+        font-size: 15px !important;
+    }
+
+
+
+    .footer-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .footer-box {
+        margin-bottom: 0;
+    }
+
+    .copyright {
+        margin-bottom: 0;
+    }
+
+    .anschrift>ul {
+        padding-left: 0;
+    }
+
+    .pimg1,
+    .pimg2,
+    .pimg3,
+    .pimg4 {
+        min-height: 200px;
+    }
+}
+
+@media screen and (max-width: 1192px) {
+    .konterfei-leitgedanke {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 912px) {
+    #logo {
+        width: 150px;
+    }
+
+    #main-nav {
+        width: 100%;
+    }
+
+    .transition {
+        transition: unset !important;
+    }
+
+    .zu {
+        top: unset !important;
+    }
+
+    .vision-container h2 {
+        font-size: 1.5rem !important;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .boxen {
+        margin-top: 7%;
+    }
+
+    #vision {
+        background-position: 47% 30%;
+    }
+
+    #logo {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .about-box {
+        line-height: 1.5rem;
+    }
+
+    .test-container {
+        margin-top: 18%;
+    }
+
+    #geographie {
+        height: 100vh;
+    }
+
+    #contact h3 {
+        margin-top: 25px;
+    }
+
+    .test-container {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
